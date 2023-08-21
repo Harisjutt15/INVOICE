@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="invoice.css">
+  <title></title>
+</head>
+<body>
+    <div id="container">
+      <div id="mainbox">
+        <div id="box">
+
+
+
+
+          <div id="D">
+          <div id="dep">Departmental Invoice</div>
+          </div>
+          <div id="L1"></div>
+          <div id="SEL">
+
+            <div>
+          
+          <select id="OPTION" onchange="productChange()">
+            <option id="sel" selected="">Open to Select Menue</option>
+            <option value="15">Pen</option>
+            <option value="400">Book</option>
+            <option value="700">Starionary</option>
+            <option value="250">Register</option>
+            <option value="120">Colours</option>
+            <option value="20">Remover</option>
+            <option value="40">Covers</option>
+            <option value="30">Markers</option>
+            <option value="400">Book</option>
+            <option value="700">Starionary</option>
+            <option value="250">Register</option>
+            <option value="120">Colours</option>
+            <option value="20">Remover</option>
+            <option value="40">Covers</option>
+            <option value="30">Markers</option>
+          </select>
+
+        </div>
+          <div id="P">
+            
+<div class="M">
+<lable >Price</lable>
+<input type="text" id="PRICE" placeholder="Price..." disabled >
+</div>
+<div class="M">
+<lable>Quality</lable>
+<input type="number" class="NUMBER" id="QUANTITY" onchange="qChange()" 
+placeholder="Quality...">
+</div>
+<div class="M">
+<lable>Amount</lable>
+<input type="number" class="NUMBER" id="AMOUNT" placeholder="Amount..." disabled>
+</div>
+<div class="M" id="ADD">
+<button onclick="AddChange()">Add</button>
+</div>
+</div>
+
+<div id="L2"></div>
+
+<table id="TABLE2" width="100%">
+  <thead>
+    <div id="saleem">Company Name</div>
+<div id="address">Address : M.A Jinnah Road,Okara</div>
+    <tr>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Amount</th>
+    </tr>
+  </thead>
+  <tbody id="TBODY">
+    
+  </tbody>
+  
+</table>
+
+
+<div id="L2"></div>
+
+<div id="BOXES">              
+<div class="M2">
+<lable >Total</lable>
+<input type="number"  class="text1" id="TOTAL" placeholder="total..." disabled>
+</div>
+<div class="M2">
+<lable>Discount</lable>
+<input type="number" class="text1" id="DISCOUNT" placeholder="discount..."
+value="5" disabled>
+</div><!-- 
+<div class="M2">
+<lable>Tax</lable>
+<input type="number" class="text1" id="TAX" placeholder="text..."value="17" disabled>
+</div> -->
+<div class="M2">
+<lable>Net Amount</lable>
+<input type="number" class="text1" id="NETAMOUNT" placeholder="net amount..."disabled>
+</div>
+</div>
+
+<!-- <div id="SAVE" onclick="zeRo()" type="Reset">Reset</div>
+<button type="reset" onclick="resetValues()">reset</button> -->
+
+<div id="PRINT" onclick="printWndo()">Print</div>
+<div id="copy">copyrights are resurved by haris</div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<script src="invoice.js"></script>
+</body>
+</html>
